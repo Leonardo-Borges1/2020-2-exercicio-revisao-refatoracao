@@ -8,18 +8,18 @@ class Encomenda{
 
 	public:
 
-		double PESO = 0.0;
-		double CUSTOkg = 0.0;
-		double T = 0.0;
+		double peso = 0.0;
+		double custo_kg = 0.0;
+		double total = 0.0;
 		Cliente remetente;
-		Cliente dest;
+		Cliente destinatario;
 			
-		void print(){
+		void imprimir_informacoes(){
 
 			std::cout << "[Remetente]" << endl;
-			remetente.print();
+			remetente.imprimir_informacoes();
 			std::cout << "[Destinatário]" << endl;
-			dest.print();
+			destinatario.imprimir_informacoes();
 		}
 
 };
